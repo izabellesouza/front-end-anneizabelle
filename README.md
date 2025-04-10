@@ -40,7 +40,7 @@ Os resultados são exibidos diretamente no console do navegador.
 
 ### 🖼️ Preview
 
-![Interface de Teste](./image.png)
+![Image](https://github.com/user-attachments/assets/b2437730-0486-42c6-a7c9-7435c154c18a)
 
 ---
 
