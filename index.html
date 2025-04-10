@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testar Questões JavaScript</title>
+</head>
+
+<body>
+    <h1>Testar Questões JavaScript</h1>
+    <p>Abra o console do navegador para ver os resultados (F12 ou Ctrl+Shift+I).</p>
+
+    <button onclick="carregarScript('questao01.js')">Questão 01</button>
+    <button onclick="carregarScript('questao02.js')">Questão 02</button>
+    <button onclick="carregarScript('questao03.js')">Questão 03</button>
+    <button onclick="carregarScript('questao04.js')">Questão 04</button>
+    <button onclick="carregarScript('questao04b.js')">Questão 04 (com prompt)</button>
+    <button onclick="carregarScript('questao05.js')">Questão 05</button>
+    <button onclick="carregarScript('questao06.js')">Questão 06</button>
+
+    <script>
+        function carregarScript(nomeArquivo) {
+            let antigo = document.getElementById("scriptQuestao");
+            if (antigo) {
+                antigo.remove();
+            }
+
+            let script = document.createElement("script");
+            script.src = nomeArquivo;
+            script.id = "scriptQuestao";
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>
